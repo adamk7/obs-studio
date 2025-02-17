@@ -692,6 +692,18 @@ bool OBSBasic::InitBasicConfigDefaults()
 	config_set_default_uint(activeConfiguration, "AdvOut", "Track4Bitrate", 160);
 	config_set_default_uint(activeConfiguration, "AdvOut", "Track5Bitrate", 160);
 	config_set_default_uint(activeConfiguration, "AdvOut", "Track6Bitrate", 160);
+	config_set_default_uint(activeConfiguration, "AdvOut", "Track7Bitrate", 160);
+	config_set_default_uint(activeConfiguration, "AdvOut", "Track8Bitrate", 160);
+	config_set_default_uint(activeConfiguration, "AdvOut", "Track9Bitrate", 160);
+	config_set_default_uint(activeConfiguration, "AdvOut", "Track10Bitrate", 160);
+	config_set_default_uint(activeConfiguration, "AdvOut", "Track11Bitrate", 160);
+	config_set_default_uint(activeConfiguration, "AdvOut", "Track12Bitrate", 160);
+	config_set_default_uint(activeConfiguration, "AdvOut", "Track13Bitrate", 160);
+	config_set_default_uint(activeConfiguration, "AdvOut", "Track14Bitrate", 160);
+	config_set_default_uint(activeConfiguration, "AdvOut", "Track15Bitrate", 160);
+	config_set_default_uint(activeConfiguration, "AdvOut", "Track16Bitrate", 160);
+	config_set_default_uint(activeConfiguration, "AdvOut", "Track17Bitrate", 160);
+	config_set_default_uint(activeConfiguration, "AdvOut", "Track18Bitrate", 160);
 
 	config_set_default_uint(activeConfiguration, "AdvOut", "RecSplitFileTime", 15);
 	config_set_default_uint(activeConfiguration, "AdvOut", "RecSplitFileSize", 2048);

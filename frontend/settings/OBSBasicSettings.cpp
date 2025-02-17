@@ -407,6 +407,18 @@ OBSBasicSettings::OBSBasicSettings(QWidget *parent)
 	HookWidget(ui->simpleOutRecTrack4,   CHECK_CHANGED,  OUTPUTS_CHANGED);
 	HookWidget(ui->simpleOutRecTrack5,   CHECK_CHANGED,  OUTPUTS_CHANGED);
 	HookWidget(ui->simpleOutRecTrack6,   CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->simpleOutRecTrack7,   CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->simpleOutRecTrack8,   CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->simpleOutRecTrack9,   CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->simpleOutRecTrack10,   CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->simpleOutRecTrack11,   CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->simpleOutRecTrack12,   CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->simpleOutRecTrack13,   CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->simpleOutRecTrack14,   CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->simpleOutRecTrack15,   CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->simpleOutRecTrack16,   CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->simpleOutRecTrack17,   CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->simpleOutRecTrack18,   CHECK_CHANGED,  OUTPUTS_CHANGED);
 	HookWidget(ui->simpleOutMuxCustom,   EDIT_CHANGED,   OUTPUTS_CHANGED);
 	HookWidget(ui->simpleReplayBuf,      GROUP_CHANGED,  OUTPUTS_CHANGED);
 	HookWidget(ui->simpleRBSecMax,       SCROLL_CHANGED, OUTPUTS_CHANGED);
@@ -421,12 +433,36 @@ OBSBasicSettings::OBSBasicSettings(QWidget *parent)
 	HookWidget(ui->advOutTrack4,         CHECK_CHANGED,  OUTPUTS_CHANGED);
 	HookWidget(ui->advOutTrack5,         CHECK_CHANGED,  OUTPUTS_CHANGED);
 	HookWidget(ui->advOutTrack6,         CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutTrack7,         CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutTrack8,         CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutTrack9,         CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutTrack10,         CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutTrack11,         CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutTrack12,         CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutTrack13,         CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutTrack14,         CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutTrack15,         CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutTrack16,         CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutTrack17,         CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutTrack18,         CHECK_CHANGED,  OUTPUTS_CHANGED);	
 	HookWidget(ui->advOutMultiTrack1,    CHECK_CHANGED,  OUTPUTS_CHANGED);
 	HookWidget(ui->advOutMultiTrack2,    CHECK_CHANGED,  OUTPUTS_CHANGED);
 	HookWidget(ui->advOutMultiTrack3,    CHECK_CHANGED,  OUTPUTS_CHANGED);
 	HookWidget(ui->advOutMultiTrack4,    CHECK_CHANGED,  OUTPUTS_CHANGED);
 	HookWidget(ui->advOutMultiTrack5,    CHECK_CHANGED,  OUTPUTS_CHANGED);
 	HookWidget(ui->advOutMultiTrack6,    CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutMultiTrack7,    CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutMultiTrack8,    CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutMultiTrack9,    CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutMultiTrack10,    CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutMultiTrack11,    CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutMultiTrack12,    CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutMultiTrack13,    CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutMultiTrack14,    CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutMultiTrack15,    CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutMultiTrack16,    CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutMultiTrack17,    CHECK_CHANGED,  OUTPUTS_CHANGED);
+	HookWidget(ui->advOutMultiTrack18,    CHECK_CHANGED,  OUTPUTS_CHANGED);
 	HookWidget(ui->advOutRecType,        COMBO_CHANGED,  OUTPUTS_CHANGED);
 	HookWidget(ui->advOutRecPath,        EDIT_CHANGED,   OUTPUTS_CHANGED);
 	HookWidget(ui->advOutNoSpace,        CHECK_CHANGED,  OUTPUTS_CHANGED);
@@ -1699,6 +1735,18 @@ void OBSBasicSettings::LoadSimpleOutputSettings()
 	ui->simpleOutRecTrack4->setChecked(tracks & (1 << 3));
 	ui->simpleOutRecTrack5->setChecked(tracks & (1 << 4));
 	ui->simpleOutRecTrack6->setChecked(tracks & (1 << 5));
+	ui->simpleOutRecTrack7->setChecked(tracks & (1 << 6));
+	ui->simpleOutRecTrack8->setChecked(tracks & (1 << 7));
+	ui->simpleOutRecTrack9->setChecked(tracks & (1 << 8));
+	ui->simpleOutRecTrack10->setChecked(tracks & (1 << 9));
+	ui->simpleOutRecTrack11->setChecked(tracks & (1 << 10));
+	ui->simpleOutRecTrack12->setChecked(tracks & (1 << 11));
+	ui->simpleOutRecTrack13->setChecked(tracks & (1 << 12));
+	ui->simpleOutRecTrack14->setChecked(tracks & (1 << 13));
+	ui->simpleOutRecTrack15->setChecked(tracks & (1 << 14));
+	ui->simpleOutRecTrack16->setChecked(tracks & (1 << 15));
+	ui->simpleOutRecTrack17->setChecked(tracks & (1 << 16));
+	ui->simpleOutRecTrack18->setChecked(tracks & (1 << 17));
 
 	curPreset = preset;
 	curQSVPreset = qsvPreset;
@@ -4939,6 +4987,30 @@ void OBSBasicSettings::SimpleReplayBufferChanged()
 			abitrate += delta;
 		if (ui->simpleOutRecTrack6->isChecked())
 			abitrate += delta;
+		if (ui->simpleOutRecTrack7->isChecked())
+			abitrate += delta;
+		if (ui->simpleOutRecTrack8->isChecked())
+			abitrate += delta;
+		if (ui->simpleOutRecTrack9->isChecked())
+			abitrate += delta;
+		if (ui->simpleOutRecTrack10->isChecked())
+			abitrate += delta;
+		if (ui->simpleOutRecTrack11->isChecked())
+			abitrate += delta;
+		if (ui->simpleOutRecTrack12->isChecked())
+			abitrate += delta;
+		if (ui->simpleOutRecTrack13->isChecked())
+			abitrate += delta;
+		if (ui->simpleOutRecTrack14->isChecked())
+			abitrate += delta;
+		if (ui->simpleOutRecTrack15->isChecked())
+			abitrate += delta;
+		if (ui->simpleOutRecTrack16->isChecked())
+			abitrate += delta;
+		if (ui->simpleOutRecTrack17->isChecked())
+			abitrate += delta;
+		if (ui->simpleOutRecTrack18->isChecked())
+			abitrate += delta;
 	}
 
 	int vbitrate = ui->simpleOutputVBitrate->value();
@@ -5494,7 +5566,19 @@ int OBSBasicSettings::SimpleOutGetSelectedAudioTracks()
 		     (ui->simpleOutRecTrack3->isChecked() ? (1 << 2) : 0) |
 		     (ui->simpleOutRecTrack4->isChecked() ? (1 << 3) : 0) |
 		     (ui->simpleOutRecTrack5->isChecked() ? (1 << 4) : 0) |
-		     (ui->simpleOutRecTrack6->isChecked() ? (1 << 5) : 0);
+		     (ui->simpleOutRecTrack6->isChecked() ? (1 << 5) : 0) |
+			 (ui->simpleOutRecTrack7->isChecked() ? (1 << 1) : 0) |
+		     (ui->simpleOutRecTrack8->isChecked() ? (1 << 2) : 0) |
+		     (ui->simpleOutRecTrack9->isChecked() ? (1 << 3) : 0) |
+		     (ui->simpleOutRecTrack10->isChecked() ? (1 << 4) : 0) |
+		     (ui->simpleOutRecTrack11->isChecked() ? (1 << 5) : 0) |
+			 (ui->simpleOutRecTrack12->isChecked() ? (1 << 1) : 0) |
+		     (ui->simpleOutRecTrack13->isChecked() ? (1 << 2) : 0) |
+		     (ui->simpleOutRecTrack14->isChecked() ? (1 << 3) : 0) |
+		     (ui->simpleOutRecTrack15->isChecked() ? (1 << 4) : 0) |
+		     (ui->simpleOutRecTrack16->isChecked() ? (1 << 5) : 0);
+			 (ui->simpleOutRecTrack17->isChecked() ? (1 << 1) : 0) |
+		     (ui->simpleOutRecTrack18->isChecked() ? (1 << 5) : 0);
 	return tracks;
 }
 
